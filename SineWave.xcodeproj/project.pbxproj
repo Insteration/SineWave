@@ -12,6 +12,14 @@
 		D9178C65223FA66900608EBC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D9178C63223FA66900608EBC /* Main.storyboard */; };
 		D9178C67223FA66A00608EBC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D9178C66223FA66A00608EBC /* Assets.xcassets */; };
 		D9178C6A223FA66A00608EBC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D9178C68223FA66A00608EBC /* LaunchScreen.storyboard */; };
+		D9178C72223FA6BB00608EBC /* Wave.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9178C71223FA6BB00608EBC /* Wave.swift */; };
+		D9178C7A223FA9E200608EBC /* WaveViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9178C79223FA9E200608EBC /* WaveViewModel.swift */; };
+		D954BC7C224105EE00671312 /* PreferencesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D954BC7B224105EE00671312 /* PreferencesViewController.swift */; };
+		D954BC7E224106B400671312 /* WavePreferences.swift in Sources */ = {isa = PBXBuildFile; fileRef = D954BC7D224106B400671312 /* WavePreferences.swift */; };
+		D954BC802241140C00671312 /* ColorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D954BC7F2241140C00671312 /* ColorViewController.swift */; };
+		D954BC8522412DD300671312 /* GreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D954BC8422412DD300671312 /* GreenViewController.swift */; };
+		D954BC8722412DDE00671312 /* OrangeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D954BC8622412DDE00671312 /* OrangeViewController.swift */; };
+		D954BC8922412DE600671312 /* RedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D954BC8822412DE600671312 /* RedViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +30,14 @@
 		D9178C66223FA66A00608EBC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D9178C69223FA66A00608EBC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D9178C6B223FA66A00608EBC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D9178C71223FA6BB00608EBC /* Wave.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Wave.swift; sourceTree = "<group>"; };
+		D9178C79223FA9E200608EBC /* WaveViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WaveViewModel.swift; sourceTree = "<group>"; };
+		D954BC7B224105EE00671312 /* PreferencesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreferencesViewController.swift; sourceTree = "<group>"; };
+		D954BC7D224106B400671312 /* WavePreferences.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WavePreferences.swift; sourceTree = "<group>"; };
+		D954BC7F2241140C00671312 /* ColorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorViewController.swift; sourceTree = "<group>"; };
+		D954BC8422412DD300671312 /* GreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GreenViewController.swift; sourceTree = "<group>"; };
+		D954BC8622412DDE00671312 /* OrangeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrangeViewController.swift; sourceTree = "<group>"; };
+		D954BC8822412DE600671312 /* RedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RedViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +70,30 @@
 		D9178C5E223FA66900608EBC /* SineWave */ = {
 			isa = PBXGroup;
 			children = (
+				D954BC8322412DBF00671312 /* ColorControllers */,
 				D9178C5F223FA66900608EBC /* AppDelegate.swift */,
 				D9178C61223FA66900608EBC /* ViewController.swift */,
+				D954BC7B224105EE00671312 /* PreferencesViewController.swift */,
+				D954BC7D224106B400671312 /* WavePreferences.swift */,
+				D9178C71223FA6BB00608EBC /* Wave.swift */,
+				D9178C79223FA9E200608EBC /* WaveViewModel.swift */,
+				D954BC7F2241140C00671312 /* ColorViewController.swift */,
 				D9178C63223FA66900608EBC /* Main.storyboard */,
 				D9178C66223FA66A00608EBC /* Assets.xcassets */,
 				D9178C68223FA66A00608EBC /* LaunchScreen.storyboard */,
 				D9178C6B223FA66A00608EBC /* Info.plist */,
 			);
 			path = SineWave;
+			sourceTree = "<group>";
+		};
+		D954BC8322412DBF00671312 /* ColorControllers */ = {
+			isa = PBXGroup;
+			children = (
+				D954BC8422412DD300671312 /* GreenViewController.swift */,
+				D954BC8622412DDE00671312 /* OrangeViewController.swift */,
+				D954BC8822412DE600671312 /* RedViewController.swift */,
+			);
+			path = ColorControllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -135,7 +167,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D954BC8922412DE600671312 /* RedViewController.swift in Sources */,
+				D954BC7C224105EE00671312 /* PreferencesViewController.swift in Sources */,
+				D954BC7E224106B400671312 /* WavePreferences.swift in Sources */,
+				D9178C72223FA6BB00608EBC /* Wave.swift in Sources */,
 				D9178C62223FA66900608EBC /* ViewController.swift in Sources */,
+				D954BC8522412DD300671312 /* GreenViewController.swift in Sources */,
+				D954BC8722412DDE00671312 /* OrangeViewController.swift in Sources */,
+				D954BC802241140C00671312 /* ColorViewController.swift in Sources */,
+				D9178C7A223FA9E200608EBC /* WaveViewModel.swift in Sources */,
 				D9178C60223FA66900608EBC /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
